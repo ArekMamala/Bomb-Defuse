@@ -1,30 +1,45 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CodePanel : MonoBehaviour {
+namespace code {
 
-	[SerializeField]
-	Text codeText;
-	string codeTextValue = "";
+	public class CodePanel : MonoBehaviour {
 
-	// Update is called once per frame
-	void Update () {
-		codeText.text = codeTextValue;
+		SymbolsPanel code = new SymbolsPanel ();
 
-		if (codeTextValue == "1111") {
-			//Cat.isSafeOpened = true;
-			codeTextValue = "";
+		[SerializeField]
+		Text codeText;
+		[SerializeField]
+		Text symbCode;
+
+		string codeTextValue = "";
+
+		string str = "";
+
+		void Start () {
+
+			Debug.Log ("This is it " + symbCode.text);
+
 		}
 
-		if (codeTextValue.Length > 4)
-			codeTextValue = "";
-	}
+		void Update () {
+			codeText.text = codeTextValue;
 
-	public void AddDigit(string digit)
-	{
-		codeTextValue += digit;
-	}
+			if (codeTextValue == symbCode.text) {
+				//Cat.isSafeOpened = true;
+				codeTextValue = "";
+			}
 
+			if (codeTextValue.Length > 4)
+				codeTextValue = "";
+		}
+
+		public void AddDigit (string digit) {
+			codeTextValue += digit;
+		}
+
+	}
 }
