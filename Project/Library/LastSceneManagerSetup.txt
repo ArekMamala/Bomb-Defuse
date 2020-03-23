@@ -1,5 +1,13 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Win.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/HomeMenu.unity
+=======
+- path: Assets/Scenes/Bomb.unity
+>>>>>>> b48ad29efff9380b494c2d580d4ac0f9a2d7648c
+>>>>>>> 480d519b67c7e6f86757896558c61aa08c01141c
   isLoaded: 1
   isActive: 1
   isSubScene: 0
