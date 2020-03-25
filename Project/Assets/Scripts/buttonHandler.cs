@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class buttonHandler : MonoBehaviour
 {
@@ -19,7 +19,7 @@ public class buttonHandler : MonoBehaviour
     Text countdownText;
 
     float currentTime = 0f;
-    float startingTime = 200f; 
+    float startingTime = 500f; 
 
     string randomNumber = "";
 
@@ -46,13 +46,13 @@ public class buttonHandler : MonoBehaviour
 
         if(currentTime <=0 ){
             currentTime = 0;
+            SceneManager.LoadScene("lose");
+
         }
 
         if (currentTime<=10){
            countdownText.color = Color.red;
         }
-        
-    
    
     }
 
@@ -80,7 +80,7 @@ public class buttonHandler : MonoBehaviour
                 {
                     // speed the timer
                     Debug.Log ("timer speed up");
-                    this.currentTime -= 100;
+                    this.currentTime -= 250;
                     countdownText.color = Color.red;
                     Debug.Log ("timer speed up "+ currentTime);
                 }else{
@@ -107,7 +107,7 @@ public class buttonHandler : MonoBehaviour
                 else if(Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.G))
                 {
                     // speed the timer
-                    this.currentTime -= 100;
+                    this.currentTime -= 250;
                     countdownText.color = Color.red;
                     Debug.Log ("timer speed up "+ currentTime);
 
@@ -135,7 +135,7 @@ public class buttonHandler : MonoBehaviour
                 else if(Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.G))
                 {
                     // speed the timer
-                    this.currentTime -= 20 ;
+                    this.currentTime -= 250 ;
                     countdownText.color = Color.red;
                     Debug.Log ("timer speed up "+ currentTime);
                 }else{
@@ -161,14 +161,14 @@ public class buttonHandler : MonoBehaviour
                 else if(Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.G))
                 {
                     // speed the timer
-                    this.currentTime -= 100;
+                    this.currentTime -= 250;
                     countdownText.color = Color.red;
                     Debug.Log ("timer speed up "+ currentTime);
 
                 }else{
                     //Debug.Log ("not working correctly");
                 }
-                Debug.Log (isCodeAvailable);
+                //Debug.Log (isCodeAvailable);
                 break;
         }
     

@@ -33,8 +33,8 @@ public class wires : MonoBehaviour {
         wiresArr[wiresArr.Length - 1] = wires6;
 
         Vector3 pos = transform.position;
-        pos.x = 250;
-        pos.y = 330;
+        pos.x = 190;
+        pos.y = 270;
         whichWires = Random.Range (1, 5);
         Debug.Log (whichWires);
         int randomNumber;

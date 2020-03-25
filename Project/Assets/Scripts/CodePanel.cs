@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace code {
 
@@ -15,7 +16,7 @@ namespace code {
 		[SerializeField]
 		Text symbCode;
 
-		string codeTextValue = "";
+		string codeTextValue = "0000";
 
 		string str = "";
 
@@ -29,15 +30,18 @@ namespace code {
 			codeText.text = codeTextValue;
 
 			if (codeTextValue == symbCode.text) {
-				//Cat.isSafeOpened = true;
-				codeTextValue = "";
+				SceneManager.LoadScene("Win");
 			}
 
-			if (codeTextValue.Length > 4)
-				codeTextValue = "";
+			if (codeTextValue.Length >= 4 && (codeTextValue != symbCode.text) && (codeTextValue != "0000" )){
+				SceneManager.LoadScene("lose");
+
+			}
 		}
 
 		public void AddDigit (string digit) {
+			if((codeTextValue == "0000" ))
+				codeTextValue ="";
 			codeTextValue += digit;
 		}
 
