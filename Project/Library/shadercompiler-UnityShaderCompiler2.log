@@ -1,2 +1,8 @@
-Base path: '/home/sammar/Unity/Hub/Editor/2019.2.19f1/Editor/Data', plugins path '/home/sammar/Unity/Hub/Editor/2019.2.19f1/Editor/Data/PlaybackEngines'
+Base path: '/opt/Unity/Editor/Data', plugins path '/opt/Unity/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+<<<<<<< HEAD
+=======
+Unhandled exception: Protocol error - unexpected end of data (did the Editor crash?)
+
+Quitting shader compiler process
+>>>>>>> a5e490d2c35fb8d4b82398a9fe0a8b5096f76cf7
