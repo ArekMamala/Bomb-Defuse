@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
+using System.Linq;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Windows.Speech;
 
 public class buttonHandler : MonoBehaviour
 {
+    //speech recognitiojn
+    private KeywordRecognizer keywordRecognizer;
+    private Dictionary<string, Action> actions = new Dictionary<string, Action>();
+
     wires wire = new wires(); 
     
     [SerializeField]
@@ -23,7 +30,26 @@ public class buttonHandler : MonoBehaviour
 
     string randomNumber = "";
 
+    public bool redCut = false;
+    public bool blueCut = false;
+    public bool whiteCut = false;
+    public bool yellowCut = false;
+    public bool greenCut = false;
+    public bool blue = false;
+
+
+
     void Start(){
+         //voice recognition
+        actions.Add("Red", Red);
+        actions.Add("White", White);
+        actions.Add("Blue", Blue);
+        actions.Add("yellow", Yellow);
+        actions.Add("green", Green);
+        
+        keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
+        keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
+        keywordRecognizer.Start();
 
         closeCode.SetActive (true);
         openCode.SetActive (false);
@@ -55,7 +81,35 @@ public class buttonHandler : MonoBehaviour
         }
    
     }
+   
+    private void RecognizedSpeech(PhraseRecognizedEventArgs speech){
+			Debug.Log(speech.text);
+			actions[speech.text].Invoke();
 
+    }
+
+    // voice recognition methods
+    void Red(){
+        this.redCut = true;
+        Debug.Log ("red wire is cut");
+    }
+    void White(){
+        this.whiteCut = true;
+        Debug.Log ("white wire is cut");
+    }
+    void Blue(){
+        this.blueCut = true;
+        Debug.Log ("blue wire is cut");
+    }
+    void Yellow(){
+        this.yellowCut = true;
+        Debug.Log ("yellow wire is cut");
+    }
+    void Green(){
+        this.greenCut = true;
+        Debug.Log ("green wire is cut");
+    }
+    
     public void cutWire(){
         // Text txt = transform.Find("Text").GetComponent<Text>();
         // txt.text = text + number;   
@@ -67,7 +121,7 @@ public class buttonHandler : MonoBehaviour
 
                 //if the user says blue wire or presses the "b" button 
                 //therefore fail
-                if(Input.GetKeyDown(KeyCode.B)){
+                if(Input.GetKeyDown(KeyCode.B) || (this.blueCut == true )){
                     //unlock the code
                     isCodeAvailable = true;
                     closeCode.SetActive (false);
@@ -83,11 +137,19 @@ public class buttonHandler : MonoBehaviour
                     this.currentTime -= 250;
                     countdownText.color = Color.red;
                     Debug.Log ("timer speed up "+ currentTime);
-                }else{
-                    //Debug.Log ("not working correctly");
+                }else if ((this.whiteCut == true )||(this.yellowCut == true )||(this.redCut == true )||(this.greenCut == true )){
+                    // speed the timer
+                    Debug.Log ("timer speed up");
+                    this.currentTime -= 250;
+                    countdownText.color = Color.red;
+                    Debug.Log ("timer speed up "+ currentTime);  
                 }
-
-
+                this.redCut = false;
+                this.blueCut = false;
+                this.whiteCut = false;
+                this.yellowCut = false;
+                this.greenCut = false;
+                
                 break;
             case "2":
                 //four wires 
@@ -95,7 +157,7 @@ public class buttonHandler : MonoBehaviour
                 
                  //if the user says white wire or presses the "w" button 
                 //therefore fail
-                if(Input.GetKeyDown(KeyCode.W)){
+                if(Input.GetKeyDown(KeyCode.W) || (this.whiteCut == true)){
                     //unlock the code
                     isCodeAvailable = true;
                     closeCode.SetActive (false);
@@ -111,11 +173,17 @@ public class buttonHandler : MonoBehaviour
                     countdownText.color = Color.red;
                     Debug.Log ("timer speed up "+ currentTime);
 
-                }else{
-                    //Debug.Log ("not working correctly");
-                }
+                }else if((this.blueCut == true) ||(this.yellowCut == true) ||(this.redCut == true) ||(this.greenCut == true) ){
+                    // speed the timer
+                    this.currentTime -= 250;
+                    countdownText.color = Color.red;
+                    Debug.Log ("timer speed up "+ currentTime);                }
 
-                Debug.Log (isCodeAvailable);
+                this.redCut = false;
+                this.blueCut = false;
+                this.whiteCut = false;
+                this.yellowCut = false;
+                this.greenCut = false;
                 break;
             case "3":
                 //five wires 
@@ -123,7 +191,7 @@ public class buttonHandler : MonoBehaviour
 
                  //if the user says red wire or presses the "r" button 
                 //therefore fail
-                if(Input.GetKeyDown(KeyCode.R)){
+                if(Input.GetKeyDown(KeyCode.R) || (this.redCut == true)){
                     //unlock the code
                     isCodeAvailable = true;
                     closeCode.SetActive (false);
@@ -138,10 +206,17 @@ public class buttonHandler : MonoBehaviour
                     this.currentTime -= 250 ;
                     countdownText.color = Color.red;
                     Debug.Log ("timer speed up "+ currentTime);
-                }else{
-                    //Debug.Log ("not working correctly");
+                }else if((this.blueCut == true) ||(this.yellowCut == true) ||(this.whiteCut == true) ||(this.greenCut == true) ){
+                    // speed the timer
+                    this.currentTime -= 250;
+                    countdownText.color = Color.red;
+                    Debug.Log ("timer speed up "+ currentTime);
                 }
-               // Debug.Log (isCodeAvailable);
+                this.redCut = false;
+                this.blueCut = false;
+                this.whiteCut = false;
+                this.yellowCut = false;
+                this.greenCut = false;
                 break;
             case "4":
                 // six wires 
@@ -149,7 +224,7 @@ public class buttonHandler : MonoBehaviour
 
                  //if the user says blue wire or presses the "b" button 
                 //therefore fail
-                if(Input.GetKeyDown(KeyCode.B)){
+                if(Input.GetKeyDown(KeyCode.B) || (this.blueCut == true) ){
                     //unlock the code
                     isCodeAvailable = true;
                     closeCode.SetActive (false);
@@ -165,13 +240,23 @@ public class buttonHandler : MonoBehaviour
                     countdownText.color = Color.red;
                     Debug.Log ("timer speed up "+ currentTime);
 
-                }else{
-                    //Debug.Log ("not working correctly");
+                }else if ((this.whiteCut == true) ||(this.yellowCut == true) ||(this.redCut == true) ||(this.greenCut == true) ){
+                    // speed the timer
+                    Debug.Log ("timer speed up");
+                    this.currentTime -= 250;
+                    countdownText.color = Color.red;
+                    Debug.Log ("timer speed up "+ currentTime);  
                 }
-                //Debug.Log (isCodeAvailable);
+
+                this.redCut = false;
+                this.blueCut = false;
+                this.whiteCut = false;
+                this.yellowCut = false;
+                this.greenCut = false;
                 break;
         }
     
     }
 
 }
+//voice recognition done
