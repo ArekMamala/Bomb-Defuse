@@ -1679,13 +1679,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 913608324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 171645bcf3831d091af4fde93c2ac888, type: 3}
+  m_Script: {fileID: 11500000, guid: 19dc7aa238ecc2547abb17487bc9efe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   openCode: {fileID: 737463073}
   closeCode: {fileID: 920005605}
   number: {fileID: 18254054}
   countdownText: {fileID: 2009595179}
+  redCut: 0
+  blueCut: 0
+  whiteCut: 0
+  yellowCut: 0
+  greenCut: 0
+  blue: 0
+  confidence: 2
 --- !u!1 &920005605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,6 +2537,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1288402958}
+  confidence: 2
+  escape: 0
+  scene: 
 --- !u!4 &1320949811
 Transform:
   m_ObjectHideFlags: 0
@@ -2796,8 +2806,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc4d279a5bcf66344bc75f1c9032b834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  confidence: 2
   codeText: {fileID: 1756239536}
   symbCode: {fileID: 1548522822}
+  number: 
 --- !u!1 &1447254370
 GameObject:
   m_ObjectHideFlags: 0
