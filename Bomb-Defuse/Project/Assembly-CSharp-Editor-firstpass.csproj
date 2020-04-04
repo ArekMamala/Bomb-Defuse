@@ -57,13 +57,19 @@
      <Compile Include="Assets\Plugins\BitmapFontImporter\Editor\BFMenuTool.cs" />
      <Compile Include="Assets\Plugins\BitmapFontImporter\Editor\FntParse.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/kubam/areksProject/GESTURE-BASED-UI-DEVELOPMENT-PROJECT-master/Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/kubam/Desktop/testProject/Bomb-Defuse/Bomb-Defuse/Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/kubam/areksProject/GESTURE-BASED-UI-DEVELOPMENT-PROJECT-master/Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/kubam/Desktop/testProject/Bomb-Defuse/Bomb-Defuse/Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/kubam/areksProject/GESTURE-BASED-UI-DEVELOPMENT-PROJECT-master/Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/kubam/Desktop/testProject/Bomb-Defuse/Bomb-Defuse/Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.multiplayer-weaver.Editor">
+ <HintPath>C:/Users/kubam/Desktop/testProject/Bomb-Defuse/Bomb-Defuse/Project/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Users/kubam/Desktop/testProject/Bomb-Defuse/Bomb-Defuse/Project/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -19,7 +19,7 @@ public class wires : MonoBehaviour {
 
     void Start () {
         var panel = GameObject.Find ("wires");
-
+        
         Array.Resize (ref wiresArr, wiresArr.Length + 1);
         wiresArr[wiresArr.Length - 1] = wires3;
 
@@ -34,7 +34,7 @@ public class wires : MonoBehaviour {
 
         Vector3 pos = transform.position;
         pos.x = 190;
-        pos.y = 270;
+        pos.y = 300;
         whichWires = Random.Range (1, 5);
         Debug.Log (whichWires);
         int randomNumber;

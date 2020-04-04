@@ -29,7 +29,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -45,7 +45,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -61,7 +61,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -77,7 +77,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -93,7 +93,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -109,7 +109,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -125,7 +125,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -141,7 +141,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -157,7 +157,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -173,7 +173,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -189,7 +189,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -205,7 +205,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -221,7 +221,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -237,7 +237,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -253,7 +253,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -269,7 +269,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 96
       height: -134
     advance: 56
@@ -285,7 +285,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -301,7 +301,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -317,7 +317,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -333,7 +333,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -349,7 +349,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -365,7 +365,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -381,7 +381,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -397,7 +397,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -413,7 +413,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 92
       height: -134
     advance: 52
@@ -429,7 +429,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 92
       height: -134
     advance: 52
@@ -445,7 +445,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -461,7 +461,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 95
       height: -134
     advance: 55
@@ -477,7 +477,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 92
       height: -134
     advance: 52
@@ -493,7 +493,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -509,7 +509,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -525,7 +525,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -541,7 +541,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 93
       height: -134
     advance: 53
@@ -557,7 +557,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -573,7 +573,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -589,7 +589,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -605,7 +605,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 94
       height: -134
     advance: 54
@@ -621,7 +621,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 93
       height: -134
     advance: 53
@@ -637,7 +637,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -653,7 +653,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -669,7 +669,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -685,7 +685,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -701,7 +701,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 91
       height: -134
     advance: 51
@@ -717,7 +717,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -733,7 +733,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 92
       height: -134
     advance: 52
@@ -749,7 +749,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -765,7 +765,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -781,7 +781,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -797,7 +797,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -813,7 +813,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -829,7 +829,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -845,7 +845,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -861,7 +861,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -877,7 +877,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 95
       height: -134
     advance: 55
@@ -893,7 +893,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -909,7 +909,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -925,7 +925,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 91
       height: -134
     advance: 51
@@ -941,7 +941,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 92
       height: -134
     advance: 52
@@ -957,7 +957,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -973,7 +973,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -989,7 +989,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -1005,7 +1005,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -1021,7 +1021,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 91
       height: -134
     advance: 51
@@ -1037,7 +1037,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 92
       height: -134
     advance: 52
@@ -1053,7 +1053,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -1069,7 +1069,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -1085,7 +1085,7 @@ Font:
     vert:
       serializedVersion: 2
       x: -20
-      y: 20
+      y: 89
       width: 90
       height: -134
     advance: 50
@@ -1093,8 +1093,8 @@ Font:
   m_KerningValues: []
   m_PixelScale: 0.1
   m_FontData: 
-  m_Ascent: 0
-  m_Descent: 0
+  m_Ascent: 69
+  m_Descent: -25
   m_DefaultStyle: 0
   m_FontNames: []
   m_FallbackFonts: []

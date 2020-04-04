@@ -18,6 +18,7 @@ namespace code {
 		private KeywordRecognizer keywordRecognizer;
 		private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
+    	public ConfidenceLevel confidence = ConfidenceLevel.Low;
 
 		[SerializeField]
 		Text codeText;
@@ -45,16 +46,14 @@ namespace code {
 			actions.Add("eight", eight);
 			actions.Add("nine", nine);
 			
-			keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
+			keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray(), confidence);
 			keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
 			keywordRecognizer.Start();
-
 		}
 
 		private void RecognizedSpeech(PhraseRecognizedEventArgs speech){
 			Debug.Log(speech.text);
 			actions[speech.text].Invoke();
-
 		}
 
 		void one(){
@@ -104,23 +103,28 @@ namespace code {
 
 		void Update () {
 			codeText.text = codeTextValue;
-
+			// if users imput is the same as the hidden in the background code
+			//user entered right code take him to win
 			if (codeTextValue == symbCode.text) {
 				SceneManager.LoadScene("Win");
 			}
-
+			// to lose code has to be at least 4
+			// annd not equal to answer
+			// and also not equal t 0000
 			if (codeTextValue.Length >= 4 && (codeTextValue != symbCode.text) && (codeTextValue != "0000" )){
 				SceneManager.LoadScene("lose");
 
 			}
 		}
 
+		// add digit through speech
 		public void AddDigitVR () {
 			if((codeTextValue == "0000" ))
 				codeTextValue ="";
 			codeTextValue += this.number;
 		}
 
+		//add digit with mouse
 		public void AddDigit (string digit) {
 			if((codeTextValue == "0000" ))
 				codeTextValue ="";

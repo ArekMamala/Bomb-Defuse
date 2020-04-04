@@ -14,6 +14,7 @@ public class navigation : MonoBehaviour
      //speech recognitiojn
     private KeywordRecognizer keywordRecognizer;
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
+    public ConfidenceLevel confidence = ConfidenceLevel.Low;
 
     public static bool paused = false;
     public  bool escape = false;
@@ -25,11 +26,12 @@ public class navigation : MonoBehaviour
         //voice recognition
         actions.Add("play", play);
         actions.Add("quit", QuitGame);
-        actions.Add("menu", instructions);
-        actions.Add("stop", manual);        
+        actions.Add("Instructions", instructions);
+        actions.Add("manual", manual);
+        actions.Add("Exit manual", manual);        
         actions.Add("home", home);
         
-        keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
+        keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray(),confidence);
 
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
