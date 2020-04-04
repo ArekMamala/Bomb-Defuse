@@ -2,6 +2,21 @@
 We have chosen to design a 2D game it’s called “Bomb Defuse ”. This game makes the player think and act under pressure, it tests the players never, The player receives instructions and steps on how to go about defusing the bomb that he gets displayed with. The bomb consists of few steps that are needed to be accomplished before the bomb is defused.
 
 ### How to run the game
+##### Game Requirements <br>- microphone <br>- keyboard <br>- unity installed
+
+This game is only able to work on a windows computer. The game is only works using the Microsoft Speech engine if you want to use voice, otherwise game is able to work with keyboard controls.
+
+If you do not have unity install:
+<br>
+**For Windows**
+<br>
+[Download unity on windows](https://unity3d.com/get-unity/download)
+<br>
+**For Linux (arch)**
+```
+sudo pacman -S unityhub 
+```
+
 Download the Bomb-Defuse folder and open it with unity. 
 
 ### How to play the game
