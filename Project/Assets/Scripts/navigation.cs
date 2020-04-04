@@ -1,18 +1,75 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using UnityEngine.SceneManagement;
+using UnityEngine.Windows.Speech;
 
 public class navigation : MonoBehaviour
 {
     [SerializeField]
     GameObject pauseMenuUI;
 
+     //speech recognitiojn
+    private KeywordRecognizer keywordRecognizer;
+    private Dictionary<string, Action> actions = new Dictionary<string, Action>();
+    public ConfidenceLevel confidence = ConfidenceLevel.Low;
+
     public static bool paused = false;
+    public  bool escape = false;
+
+    public  string scene="";
+
+    void Start () {
+
+        //voice recognition
+        actions.Add("play", play);
+        actions.Add("quit", QuitGame);
+        actions.Add("Instructions", instructions);
+        actions.Add("manual", manual);
+        actions.Add("Exit manual", manual);        
+        actions.Add("home", home);
+        
+        keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray(),confidence);
+
+        keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
+        keywordRecognizer.Start();
+        Debug.Log(actions);
+
+
+    }
 
     void Update(){
+        //pauseGame();
+    }
+    
+    private void RecognizedSpeech(PhraseRecognizedEventArgs speech){
+			Debug.Log(speech.text);
+			actions[speech.text].Invoke();
+
+    }
+
+    void play(){
+        this.scene = "Bomb";
+        SceneManager.LoadScene("Bomb");
+    }
+    
+    void home(){
+        this.scene = "HomeMenu";
+        SceneManager.LoadScene("HomeMenu");
+    }
+
+    void instructions(){
+        this.scene = "Instructions";
+        SceneManager.LoadScene("Instructions");
+    }
+    void manual(){
+        this.escape = true;
         pauseGame();
     }
+   
+
 
     public void sceneChange(string level){
         SceneManager.LoadScene(level);
@@ -25,7 +82,7 @@ public class navigation : MonoBehaviour
     }
 
     public void pauseGame(){
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) || (this.escape = true))
         {
             if(paused)
             {
@@ -33,7 +90,7 @@ public class navigation : MonoBehaviour
             }else{
                 Pause();
             }
-            
+            this.escape=false;
         }
     }
 
