@@ -32,7 +32,7 @@ game ourself.
 ### Game Manual 
 This game is all about skill and how smart you and your friends are when is comes to working under stressful situations. You must use the Manual to defuse the bomb before the time runs out. 
 
-![Game Manual](Bomb-Defuse/Project/Assets/assets/manual.png "manual")
+![Game Manual](Bomb-Defuse/Project/Assets/Assets/manual.png "manual")
 
 ### Developer Diary
 ##### Stage 1
