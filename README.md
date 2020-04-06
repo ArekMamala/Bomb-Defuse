@@ -17,7 +17,7 @@ If you do not have unity install:
 sudo pacman -S unityhub 
 ```
 
-Download the Bomb-Defuse folder and open it with unity. 
+Download the BombSquadFolder folder and open it with unity. 
 
 ### How to play the game
 1. Player needs to cut the right wire to unlock the next part of the bomb but every time that the wrong wire is cut the time on
